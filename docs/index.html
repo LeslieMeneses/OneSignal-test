@@ -2,6 +2,20 @@
 <html>
 <head>
   <title>Curso Vue.js</title>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+      appId: "f440b479-b41f-4694-9c1e-a14005b4bacc",
+      autoRegister: false, /* Set to true to automatically prompt visitors */
+      httpPermissionRequest: {
+          enable: true
+      },
+      notifyButton: {
+          enable: true /* Set to false to hide */
+      }
+      }]);
+  </script>
 </head>
 <body>
   <div id="app">
@@ -20,19 +34,6 @@
       }
     })
   </script>
-  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
-  <script>
-      var OneSignal = window.OneSignal || [];
-      OneSignal.push(["init", {
-      appId: "f440b479-b41f-4694-9c1e-a14005b4bacc",
-      autoRegister: false, /* Set to true to automatically prompt visitors */
-      httpPermissionRequest: {
-          enable: true
-      },
-      notifyButton: {
-          enable: true /* Set to false to hide */
-      }
-      }]);
-  </script>
+  
 </body>
 </html>
