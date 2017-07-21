@@ -7,8 +7,15 @@
       var OneSignal = window.OneSignal || [];
       OneSignal.push(["init", {
         appId: "f440b479-b41f-4694-9c1e-a14005b4bacc",
-      }])
-      
+        autoRegister: false, /* Set to true to automatically prompt visitors */
+        httpPermissionRequest: {
+            enable: true
+        },
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        },
+        persistNotification: true
+      }]);
   </script>
 </head>
 <body>
