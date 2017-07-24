@@ -2,24 +2,21 @@
 <html>
 <head>
   <title>Curso Vue.js</title>
+  <link rel="manifest" href="/manifest.json">
   <script src="OneSignalSDK.js" async></script>
-<script>
-    var OneSignal = window.OneSignal || [];
-    OneSignal.push(["init", {
-      appId: "b0a791a9-6338-42a5-b912-95f20086e798",
-      autoRegister: false, /* Set to true to automatically prompt visitors */
-      httpPermissionRequest: {
-        enable: true
-      },
-      notifyButton: {
-          enable: true /* Set to false to hide */
-      }
-    }]);
-</script>
-<div id="home-top" class="clearfix">
-<p>OneSingle Testing</p>
-<br>
-</div>
+  <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "b0a791a9-6338-42a5-b912-95f20086e798",
+        autoRegister: false, /* Set to true to automatically prompt visitors */
+        httpPermissionRequest: {
+          enable: true
+        },
+        notifyButton: {
+            enable: true /* Set to false to hide */
+        }
+      }]);
+  </script>
 </head>
 <body>
   <h1>Test</h1>
